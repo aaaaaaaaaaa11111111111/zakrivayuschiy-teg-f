@@ -4,3 +4,50 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --back-color: #fff;
+    --accent-color: #000;
+    --default-f-wght: 400;
+    --title-f-wght: 700;
+    --horizontal-gradient: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+    --vertical-gradient: repeating-linear-gradient(180deg, #d3d3d3, transparent 2px);
+    --linear-gradient: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --label-outline-color: #fff;
+}
+
+:root.theme-dark {
+    --back-color: #000;
+    --accent-color: #00cc14;
+    --default-f-wght: 465;
+    --title-f-wght: 785;
+    --horizontal-gradient: repeating-linear-gradient(90deg, #000, transparent 2px);
+    --vertical-gradient: repeating-linear-gradient(180deg, #000, transparent 2px);
+    --linear-gradient: linear-gradient(180deg, #007f0c 0%, #004306 100%);
+    --label-outline-color: #000;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+      --back-color: #fff;
+      --accent-color: #000;
+      --default-f-wght: 400;
+      --title-f-wght: 700;
+      --horizontal-gradient: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+      --vertical-gradient: repeating-linear-gradient(180deg, #d3d3d3, transparent 2px);
+      --linear-gradient: linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+      --label-outline-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --back-color: #000;
+      --accent-color: #00cc14;
+      --default-f-wght: 465;
+      --title-f-wght: 785;
+      --horizontal-gradient: repeating-linear-gradient(90deg, #000, transparent 2px);
+      --vertical-gradient: repeating-linear-gradient(180deg, #000, transparent 2px);
+      --linear-gradient: linear-gradient(180deg, #007f0c 0%, #004306 100%);
+      --label-outline-color: #000;
+    }
+}
