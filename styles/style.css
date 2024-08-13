@@ -175,7 +175,6 @@
 @supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
   .card__label {
     -webkit-text-stroke: 1px var(--label-outline-color);
-    text-stroke: 1px var(--label-outline-color);
     text-shadow: none;
   }
 }
@@ -230,6 +229,7 @@
 .like-icon {
   block-size: 38px;
   inline-size: 38px;
+  cursor: pointer;
 }
 
 .sparks {
@@ -324,6 +324,7 @@
   transition-timing-function: ease;
   transition: 0.3s;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -480,6 +481,26 @@
 .dialog::backdrop {
   background-color: #000;
   opacity: 0.75;
+}
+
+.single-filter {
+  filter: blur(0.6rem);
+  transition: filter 0.3s;
+}
+
+.single-filter:hover {
+  filter: blur(0);
+  transition: filter 0.3s;
+}
+
+.dark-room-dead-eyes-filter {
+  filter: blur(0.6rem) brightness(300%);
+  transition: filter 0.3s;
+}
+
+.dark-room-dead-eyes-filter:hover {
+  filter: blur(0) brightness(100%);
+  transition: filter 0.3s;
 }
 
 @media (width <= 375px) {
