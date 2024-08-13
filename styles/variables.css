@@ -4,9 +4,12 @@
     --main-font: 'Inter', sans-serif;
     --default-f-wght: 400;
     --title-f-wght: 700;
-    --back-color: white;
+    --back-color: #fff;
     --accent-color: #000;
     --horizontal-gradient: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
     --vertical-gradient: repeating-linear-gradient(180deg, #d3d3d3, transparent 2px);
     --linear-gradient: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --mix-color: #fff;
+    --heart-contour-color: #000;
+    --sparks-color: #FF0000;
 }
