@@ -15,7 +15,6 @@
     --label-outline-color: #fff;
     --mix-color: #fff;
     --heart-contour-color: #000;
-    --sparks-color: #FF0000;
 }
 
 :root.theme-dark {
@@ -29,7 +28,6 @@
     --label-outline-color: #000;
     --mix-color: #00cc14;
     --heart-contour-color: #00cc14;
-    --sparks-color: #FF0000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -44,7 +42,6 @@
       --label-outline-color: #fff;
       --mix-color: #fff;
       --heart-contour-color: #000;
-      --sparks-color: #FF0000;
     }
 }
 
@@ -60,6 +57,5 @@
       --label-outline-color: #000;
       --mix-color: #00cc14;
       --heart-contour-color: #00cc14;
-      --sparks-color: #FF0000;
     }
 }
